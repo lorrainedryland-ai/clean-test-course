@@ -13,8 +13,8 @@ jobs:
     name: Execute the PyCharm security test
     steps:
       - uses: actions/checkout@v4
-      - name: Run PyCharm security test
-        Uses: tonybaloney/pycharm-security@1.25.1
+      - name: PyCharm Python Security Scanner
+        uses: tonybaloney/pycharm-security@1.25.1
   build_and_test:
     needs: [security_test]
     runs-on: ubuntu-latest
